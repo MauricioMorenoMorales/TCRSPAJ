@@ -8,13 +8,18 @@
 <body>
   <header>
     <ul>
-      <li><button>Home</button></li>
-      <li><button>Contact</button></li>
-      <li><button>About Me</button></li>
+      <li><button onclick="router.loadRoute('')">Home</button></li>
+      <li><button onclick="router.loadRoute('contacto')">Contact</button></li>
+      <li><button onclick="router.loadRoute('about')">About Me</button></li>
     </ul>
   </header>
-  <div class="">
-    <h1>Hola Estudiante! Estás en el home</h1>
+  <div data-router class="">
   </div>
+  <script src="./router.js"></script>
+  <script src="./routes.js"></script>
+  <script src="./index.js"></script>
+  <script>
+    console.log(window.location.pathname.split('/'))
+  </script>
 </body>
 </html>
